@@ -1,0 +1,256 @@
+body {
+    margin: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+/****************   Nav Section **********************/
+nav {
+	background-color: #6B7445;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border-bottom: 3px solid #839705;
+  padding: 0px 10px 0px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: wheat;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	display: flex;
+  justify-content: center;
+  background-color: #6B7445;
+  color: gainsboro
+
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: wheat;
+}
+
+/*********** Splash Page ************************/
+header {
+  text-align: center;
+  background-color: #BBCB2E;
+  padding: 20px;
+  color: white;
+}
+
+header h1 {
+  color: whitesmoke;
+  font-family: Google Sans, sans-serif;
+  font-size: 40px;
+}
+
+header img {
+  border-radius: 100%;
+  border: 5px solid #839705;
+}
+
+.address {
+
+}
+
+.tagline {
+
+}
+
+/************* Sections ********************/
+hr {
+  border: 2px solid #839705;
+}
+
+section h2 {
+  background-color: #6B7445;
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  font-family: Google Sans, sans-serif;
+}
+
+section h3 {
+  font-family: Google Sans, sans-serif;
+  color: whitesmoke;
+}
+
+section dl {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px 50px;
+}
+
+
+/* Skills Section Styles */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 18px;
+  padding: 0;
+  margin: 18px auto 28px auto;
+  list-style: none;
+  max-width: 420px;
+}
+
+.skills li {
+  background: #6B7445;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1em;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.skills li:hover {
+  background: #839705;
+  transform: scale(1.08);
+}
+
+section a {
+  text-decoration: none;
+  color: wheat;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card img {
+  border-radius: 10px;
+  width: 100px;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #BBCB2E;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 7px black;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 6px 5px 15px black;
+  transform: scale(1.03);
+  transition: all 0.2s ease-in-out;
+}
+.card ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  text-decoration: none;
+  padding: 5px;
+  list-style: none;
+  gap: 10px;
+}
+.card ul li {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  padding: 32px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto 20px auto;
+  
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #bbc2a2;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+  background: #f9f9f9;
+  transition: border 0.2s;
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid #bbc2a2;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+  background: #f9f9f9;
+  transition: border 0.2s;
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+  background: #6B7445;
+  color: white;
+  cursor: pointer;
+}
+
+.one-col button:hover {
+  background: #839705;
+  transform: scale(1.03);
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #839705;
+  outline: none;
+}
