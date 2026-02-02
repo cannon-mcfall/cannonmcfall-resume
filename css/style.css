@@ -77,18 +77,17 @@ hr {
 }
 section {
   padding: 5px;
-  width: 50%;
-  margin: auto;
 }
 
 section h2 {
   background-color: #6B7445;
   color: white;
   padding: 10px;
-  margin: 0px;
+  width: 50%;
+  margin: auto;
   text-align: center;
   font-family: Google Sans, sans-serif;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 section h3 {
@@ -101,6 +100,8 @@ section dl {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px 50px;
+  width: 50%;
+  margin: auto;
 }
 
 
