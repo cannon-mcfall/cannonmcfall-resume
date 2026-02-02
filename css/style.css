@@ -75,6 +75,11 @@ header img {
 hr {
   border: 2px solid #839705;
 }
+section {
+  padding: 5px;
+  width: 50%;
+  margin: auto;
+}
 
 section h2 {
   background-color: #6B7445;
@@ -83,6 +88,7 @@ section h2 {
   margin: 0px;
   text-align: center;
   font-family: Google Sans, sans-serif;
+  border-radius: 20px;
 }
 
 section h3 {
